@@ -1,0 +1,31 @@
+﻿if (response == "living room)
+            {
+                LivingRoom();
+            }
+    
+            else if (response == "kitchen")
+            {
+                Kitchen();
+            }
+            else if (response == "bedroom")
+            {
+                Bedroom();
+            }
+    
+
+        static void Kitchen()
+        {
+
+        }
+        static void Bedroom()
+        {
+
+        }
+        static Living Room()
+        {
+
+        }
+        static void Basement()
+        {
+
+        }
