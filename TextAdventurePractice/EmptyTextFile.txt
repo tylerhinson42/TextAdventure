@@ -1,4 +1,35 @@
-﻿if (response == "living room)
+﻿
+
+
+
+
+static void DelayWrite1M(string text, int charDelay = 50, bool delayNewLine = true)
+{
+    foreach (char c in text)
+    {
+        Console.Write(c)
+        Thread.Sleep(charDelay);
+    }
+    if (delayNewLine) System.Threading.Thread.Sleep(1000);
+    Console.Write(Environment.NewLine);
+}
+
+DelayWrite1M("") //To call delay write method from above
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (response == "living room)
             {
                 LivingRoom();
             }
