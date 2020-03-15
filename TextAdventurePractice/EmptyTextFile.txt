@@ -1,8 +1,4 @@
 ﻿
-
-
-
-
 static void DelayWrite1M(string text, int charDelay = 50, bool delayNewLine = true)
 {
     foreach (char c in text)
@@ -17,16 +13,7 @@ static void DelayWrite1M(string text, int charDelay = 50, bool delayNewLine = tr
 DelayWrite1M("") //To call delay write method from above
 
 
-
-
-
-
-
-
-
-
-
-
+_________________________________________________________________________________________________________________________________________________________
 
 
 if (response == "living room)

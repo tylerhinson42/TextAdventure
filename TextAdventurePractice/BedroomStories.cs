@@ -36,6 +36,5 @@ namespace TextAdventurePractice
                 Environment.Exit(1);
             }
         }
-
     }
 }

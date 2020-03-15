@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Threading;
 
 namespace TextAdventurePractice
@@ -34,18 +33,7 @@ namespace TextAdventurePractice
                 Environment.Exit(1);
             }
         }
-
-
-
-
     }
-
-
-
-
-
-
-
 }
 
 
