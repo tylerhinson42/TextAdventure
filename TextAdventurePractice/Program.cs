@@ -73,27 +73,34 @@ namespace TextAdventurePractice
             //conditional = true;
             //if(response == "living room")
             //{
-                //Console.WriteLine("You have chosen to enter the Living Room. Would you like to look behind the mirror?");
-                //Thread.Sleep(1500);
-                //string response1 = Console.ReadLine();
-                //if (response == "Yes")
-                //{
-                //    Console.WriteLine("You have found the only way out of this house..");
-                //    Console.WriteLine("Watch your 6 as you exit. You may never have this opportunity again. Should you choose to stay...");
-                //    conditional = false;
+            //Console.WriteLine("You have chosen to enter the Living Room. Would you like to look behind the mirror?");
+            //Thread.Sleep(1500);
+            //string response1 = Console.ReadLine();
+            //if (response == "Yes")
+            //{
+            //    Console.WriteLine("You have found the only way out of this house..");
+            //    Console.WriteLine("Watch your 6 as you exit. You may never have this opportunity again. Should you choose to stay...");
+            //    conditional = false;
 
-                //}
-                //else if (response1 == "no" || response1 == "maybe") 
-                //{                   
-                //    Console.WriteLine("You must move to the Bedroom or your life is gravely at stake..");
-                //    conditional = false;
-                //}
-                //else
-                //{
-                //    Environment.Exit(1);
-                //}
-                LivingRoomStories livingRoom = new LivingRoomStories();
-                livingRoom.firstLivingRoomStory(name);
+            //}
+            //else if (response1 == "no" || response1 == "maybe") 
+            //{                   
+            //    Console.WriteLine("You must move to the Bedroom or your life is gravely at stake..");
+            //    conditional = false;
+            //}
+            //else
+            //{
+            //    Environment.Exit(1);
+            //}
+
+            var freedomRoute = new LivingRoomStories();
+            freedomRoute.WayOut = Console.ReadLine().ToLower();
+
+
+
+
+                //LivingRoomStories livingRoom = new LivingRoomStories();
+                //livingRoom.firstLivingRoomStory(name);
             //}
 
             //while (conditional1)
