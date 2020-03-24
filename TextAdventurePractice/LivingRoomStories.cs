@@ -7,14 +7,26 @@ namespace TextAdventurePractice
     {
         private bool conditional;
         public string underSofa;
+
+        internal static void Enter()
+        {
+            Console.WriteLine("You have now entered the Living Room..");
+        }
+
         public LivingRoomStories()
         {
             Sofa = true;
             LoveSeat = true;
             CoffeeTable = true;
             WaysOut = 1;
-            WaysIn = 2;
+            WaysIn = 3;
             WayOut = underSofa;
+
+            //static string DoSomething()
+            //{
+            //    return "I've chosen the Living Room";
+            //}
+
             Console.WriteLine("Would you like to look under the Sofa?");
             string response = Console.ReadLine().ToLower();
 

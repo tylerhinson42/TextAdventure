@@ -7,6 +7,12 @@ namespace TextAdventurePractice
     {
         private bool conditional;
         public string behindMirror;
+
+        internal static void Enter()
+        {
+            Console.WriteLine("You have now entered the Bedroom..");
+        }
+
         public BedroomStories()
         {
             MasterBed = true;
@@ -39,7 +45,6 @@ namespace TextAdventurePractice
         public int WaysOut { get; }
         public int WaysIn { get; }
         public string WayOut { get; set; }
-
 
         //public void firstBedroomStory(string characterName)
         //{

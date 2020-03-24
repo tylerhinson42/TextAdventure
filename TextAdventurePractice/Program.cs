@@ -14,7 +14,7 @@ namespace TextAdventurePractice
             string response = Console.ReadLine().ToLower();
             if (response == "yes")
             {
-                Console.WriteLine("Welcome to The JackedUp Manor");
+                Console.WriteLine("Welcome to The Corpsely Manor");
             }
             else if (response == "no" || response == "maybe")
             {
@@ -31,41 +31,55 @@ namespace TextAdventurePractice
             Console.WriteLine($"Welcome {name}, My name is Lucious.");
 
 
-            while (conditional)
+            //while (conditional)
+            //{
+            //    Console.WriteLine("Which room would you like to see first: Living Room, Bedroom, Kitchen, or the Basement");
+            //    response = Console.ReadLine().ToLower();
+            //    switch (response)
+            //    {
+            //        case "living room":
+            //            Console.WriteLine("Very well, we will look at the living room first");
+            //            conditional = false;
+            //            break;
+            //        case "bedroom":
+            //            Console.WriteLine("Very well, we will look at the bedroom first");
+            //            conditional = false;
+            //            break;
+            //        case "kitchen":
+            //            Console.WriteLine("Very well, we will look at the kitchen first");
+            //            conditional = false;
+            //            break;
+            //        case "basement":
+            //            Console.WriteLine("I understand, but I urge you to make another selection");
+            //            count++;
+            //            if (count >= 2)
+            //            {
+            //                Console.WriteLine("As you wish....");
+            //                Thread.Sleep(1500);
+            //                Console.WriteLine("A hole opens up in the floor... you have fallen into a pit of spikes, and died a horrible death");
+            //                Environment.Exit(1);
+            //            }
+            //            break;
+            //    }
+            //    if (response != "living room" && response != "bedroom" && response != "kitchen" && response != "basement")
+            //    {
+            //        Console.WriteLine("Please make a proper selection...");
+            //    }
+            //}
+
+            Console.WriteLine("Which room would you like to enter? Would you like to enter the Living Room first, or the Bedroom, or the Kitchen, or the Basement?");
+            string response1 = Console.ReadLine();
+
+            if(response1 == "Living room")
             {
-                Console.WriteLine("Which room would you like to see first: Living Room, Bedroom, Kitchen, or the Basement");
-                response = Console.ReadLine().ToLower();
-                switch (response)
-                {
-                    case "living room":
-                        Console.WriteLine("Very well, we will look at the living room first");
-                        conditional = false;
-                        break;
-                    case "bedroom":
-                        Console.WriteLine("Very well, we will look at the bedroom first");
-                        conditional = false;
-                        break;
-                    case "kitchen":
-                        Console.WriteLine("Very well, we will look at the kitchen first");
-                        conditional = false;
-                        break;
-                    case "basement":
-                        Console.WriteLine("I understand, but I urge you to make another selection");
-                        count++;
-                        if (count >= 2)
-                        {
-                            Console.WriteLine("As you wish....");
-                            Thread.Sleep(1500);
-                            Console.WriteLine("A hole opens up in the floor... you have fallen into a pit of spikes, and died a horrible death");
-                            Environment.Exit(1);
-                        }
-                        break;
-                }
-                if (response != "living room" && response != "bedroom" && response != "kitchen" && response != "basement")
-                {
-                    Console.WriteLine("Please make a proper selection...");
-                }
+                LivingRoomStories.Enter();
+                
+                
             }
+
+            var freedomRoute = new LivingRoomStories();
+            freedomRoute.WayOut = Console.ReadLine();
+            //**underSofa (look under the sofa) is the way out of the Living Room**
 
             Console.BackgroundColor = ConsoleColor.DarkGray;
             Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -93,10 +107,37 @@ namespace TextAdventurePractice
             //    Environment.Exit(1);
             //}
 
-            var freedomRoute = new LivingRoomStories();
-            freedomRoute.WayOut = Console.ReadLine().ToLower();
+            if (response == "Bedroom")
+            {
+                BedroomStories.Enter();
+            }
 
+            var freedomRoute1 = new BedroomStories();
+            freedomRoute1.WayOut = Console.ReadLine().ToLower();
+            //**Look behindMirror, is the way out of the Bedroom**
 
+            if (response == "Kitchen")
+            {
+                KitchenStories.Enter();
+            }
+
+            var freedomRoute2 = new KitchenStories();
+            freedomRoute2.WayOut = Console.ReadLine();
+            //**Look insidePantry, is the way out of the Kitchen**
+
+            if (response == "Basement")
+            {
+                BasementStories.Enter();
+            }
+
+            var freedomRoute3 = new BasementStories();
+            freedomRoute3.WayOut = Console.ReadLine();
+            //**Pull secretLEver, is the way out of the Basement** 
+
+            //var secretLever = new BasementStories();
+            //secretLever.WayOut = Console.ReadLine();
+
+            Console.WriteLine(" ");
 
 
                 //LivingRoomStories livingRoom = new LivingRoomStories();

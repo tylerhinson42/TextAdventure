@@ -7,12 +7,18 @@ namespace TextAdventurePractice
     {
         private bool conditioanl;
         public string secretLever;
+
+        internal static void Enter()
+        {
+            Console.WriteLine("You have now entered the Basement..");
+        }
+
         public BasementStories()
         {
             CollapsingStairs = true;
             DeathTrapWasherDryer = true;
             PitOfSpikes = true;
-            WaysOut = 0;
+            WaysOut = 1;
             _= WaysIn >= 0;
             WayOut = secretLever;
         }

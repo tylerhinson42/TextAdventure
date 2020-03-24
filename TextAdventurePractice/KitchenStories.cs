@@ -7,6 +7,12 @@ namespace TextAdventurePractice
     {
         private bool conditional;
         public string insidePantry;
+
+        internal static void Enter()
+        {
+            Console.WriteLine("You have now entered the Kitchen");
+        }
+
         public KitchenStories()
         {
             SubZero = true;
@@ -54,23 +60,6 @@ namespace TextAdventurePractice
         //}
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //using System;
 //namespace TextAdventurePractice
