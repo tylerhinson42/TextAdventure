@@ -11,7 +11,7 @@ namespace TextAdventurePractice
             bool conditional = true;
           
             Console.WriteLine("Are you prepared to enter?");
-            string response = Console.ReadLine().ToLower();
+            string response = Console.ReadLine().ToLower(); 
             if (response == "yes")
             {
                 Console.WriteLine("Welcome to The Corpsely Manor");
@@ -23,7 +23,7 @@ namespace TextAdventurePractice
             }
             Thread.Sleep(1500); //1.5 seconds counted in milliseconds
 
-            Console.BackgroundColor = ConsoleColor.DarkYellow;
+            Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.DarkRed; //Once it gets to this line, everything thereafter will be red until changed back
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
@@ -83,6 +83,7 @@ namespace TextAdventurePractice
 
             Console.BackgroundColor = ConsoleColor.DarkGray;
             Console.ForegroundColor = ConsoleColor.DarkRed;
+
 
             //conditional = true;
             //if(response == "living room")

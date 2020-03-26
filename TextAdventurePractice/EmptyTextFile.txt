@@ -1,4 +1,4 @@
-﻿
+﻿r
 static void DelayWrite1M(string text, int charDelay = 50, bool delayNewLine = true)
 {
     foreach (char c in text)
